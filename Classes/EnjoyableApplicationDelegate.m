@@ -58,6 +58,8 @@
         [self transformIntoElement:nil];
     else
         [self.window makeKeyAndOrderFront:nil];
+    
+    self.ic.simulatingEvents = YES;
 }
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication
